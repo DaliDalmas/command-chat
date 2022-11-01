@@ -52,5 +52,5 @@ if __name__=="__main__":
     hosts_ports = pd.read_csv('hosts_port.csv').values
     for item in hosts_ports:
         print(f'Running server on host={item[0]}, port={item[1]}')
-        mainThread = threading.Thread(target=ServerSide(host=item[0], port=item[1]).deploy)
+        mainThread = threading.Thread(target=ServerSide(host=item[0], port=item[1]).deploy_chat_room)
         mainThread.start()
