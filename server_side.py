@@ -1,5 +1,3 @@
-# Originally coded by Yashraj Singh Chouhan 
-# link: https://hackernoon.com/creating-command-line-based-chat-room-using-python-oxu3u33
 import pandas as pd
 import socket, threading
 
@@ -54,3 +52,7 @@ if __name__=="__main__":
         print(f'Running server on host={item[0]}, port={item[1]}')
         mainThread = threading.Thread(target=ServerSide(host=item[0], port=item[1]).deploy_chat_room)
         mainThread.start()
+
+
+# Originally coded by Yashraj Singh Chouhan 
+# link: https://hackernoon.com/creating-command-line-based-chat-room-using-python-oxu3u33
